@@ -112,7 +112,7 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
-function newsFeeder (news){
+ function newsFeeder (news){
   const newsBod = document.createElement('div');
   const newsTitle = document.createElement('h2');
   const newsDate = document.createElement('p');
@@ -141,14 +141,13 @@ function newsFeeder (news){
 
   btnOpen.addEventListener('click', (e) =>{
     newsBod.classList.toggle('article-open');
-  })
+  });
 
   return newsBod;
 }
 
-const newsArticle = document.querySelector('articles');
+const newsArticle = document.querySelector('.articles');
 
-data.forEach(newsfeed => {
-  console.log(data);
+data.forEach(data => {
   newsArticle.appendChild(newsFeeder(data));
 })
