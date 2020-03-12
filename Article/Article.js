@@ -85,6 +85,13 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title:'Brand new Article! for step 5',
+    date: 'Mar 11th, 2020',
+    firstParagraph: 'Green Socking Green SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen Socking',
+    secondParagraph: 'Green SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen Socking',
+    thirdParagraph: 'Green SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen Socking'
   }
 ];
 
@@ -112,3 +119,42 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+ function newsFeeder (news){
+  const newsBod = document.createElement('div');
+  const newsTitle = document.createElement('h2');
+  const newsDate = document.createElement('p');
+  const paraOne = document.createElement('p');
+  const paraTwo = document.createElement('p');
+  const paraThree = document.createElement('p');
+  const btnOpen = document.createElement('span');
+
+  newsBod.appendChild(newsTitle);
+  newsBod.appendChild(newsDate);
+  newsBod.appendChild(paraOne);
+  newsBod.appendChild(paraTwo);
+  newsBod.appendChild(paraThree);
+  newsBod.appendChild(btnOpen);
+
+  newsBod.classList.add('article');
+  newsDate.classList.add('date');
+  btnOpen.classList.add('expandButton');
+
+  newsTitle.textContent = news.title;
+  newsDate.textContent = news.date;
+  paraOne.textContent = news.firstParagraph;
+  paraTwo.textContent = news.secondParagraph;
+  paraThree.textContent = news.thirdParagraph;
+  btnOpen.textContent = 'EXPAND';
+
+  btnOpen.addEventListener('click', (e) =>{
+    newsBod.classList.toggle('article-open');
+  });
+
+  return newsBod;
+}
+
+const newsArticle = document.querySelector('.articles');
+
+data.forEach(data => {
+  newsArticle.appendChild(newsFeeder(data));
+})
