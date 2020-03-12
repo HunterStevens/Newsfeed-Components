@@ -85,6 +85,13 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title:'Brand new Article! for step 5',
+    date: 'Mar 11th, 2020',
+    firstParagraph: 'Green Socking Green SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen Socking',
+    secondParagraph: 'Green SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen Socking',
+    thirdParagraph: 'Green SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen SockingGreen Socking'
   }
 ];
 
